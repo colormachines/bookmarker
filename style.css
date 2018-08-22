@@ -1,0 +1,38 @@
+html, body{
+  height:100%;
+  width:100%;
+}
+
+#enter-info{
+  border-radius: 2px 2px 2px 2px;
+  width:70%;
+  height:auto;
+  margin:0 auto;
+  margin-top: 5em;
+  background:#e1e4e8;
+  text-align:center;
+  padding-top:2em;
+  padding-bottom:2em;
+}
+#website-name{
+
+}
+#submit_site{
+  margin-top:2em;
+}
+#addedBookmarks{
+  width:70%;
+  margin:0 auto;
+  margin-top:2em;
+}
+
+#cards{
+  margin-top:1em;
+
+}
+.offset-text{
+  margin-top:2em;
+}
+.spacing{
+  margin-left:1em;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bookmarker</title>
+  <link type="text/css" rel="stylesheet" href="style.css">
+  <link rel ="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+</head>
+
+
+
+<body onload="fetchBookmarks()">
+  <div id="enter-info">
+  <form id="myForm">
+  <div class="col">
+  <h1 class="col-lg">Bookmark a Website</h1>
+  <label class="col-lg offset-text">Website Name</label>
+  <div class="col-lg-10 offset-lg-1">
+  <input class="form-control" id="website-name" type="text"/>
+</div>
+  <label class="col-lg offset-text" >Website URL</label>
+  <div class="col-lg-10 offset-lg-1">
+  <input  class="form-control" id="website-url" type="text"/>
+</div>
+  <div class="col-lg-2 offset-lg-5">
+  <input class="form-control btn-primary"  id="submit_site" type="submit"/>
+</div>
+  </div>
+</form>
+  </div>
+  <div id="addedBookmarks">
+  </div>
+    <script src="script.js"></script>
+</body>
+</html>
