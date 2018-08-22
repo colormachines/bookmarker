@@ -3,12 +3,23 @@ html, body{
   width:100%;
 }
 
+#searchbar{
+  background:#e1e4e8;
+  border-radius: 2px 2px 2px 2px;
+  width:70%;
+  height:auto;
+  margin:0 auto;
+  margin-top:3em;
+  text-align:center;
+  padding-top:1em;
+  padding-bottom:1em;
+}
 #enter-info{
   border-radius: 2px 2px 2px 2px;
   width:70%;
   height:auto;
   margin:0 auto;
-  margin-top: 5em;
+  margin-top: 3em;
   background:#e1e4e8;
   text-align:center;
   padding-top:2em;

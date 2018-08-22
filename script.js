@@ -53,8 +53,8 @@ function fetchBookmarks(){
   }
 }
 function formValidation(websiteName,websiteURL){
-if((!websiteName) & (!websiteURL)){
-  alert("Please fill form");
+if(!websiteName){
+  alert("Please enter a name");
   return false;
 }
 var expression = /[-a-zA-Z0-9@:%_\+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.~#?&//=]*)?/gi;
