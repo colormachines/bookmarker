@@ -3,6 +3,13 @@ html, body{
   width:100%;
 }
 
+#backToTopButton{
+    margin-top:35em;
+    position:fixed;
+    height:4em;
+    width:5em;
+    color:white;
+}
 #searchbar{
   background:#e1e4e8;
   border-radius: 2px 2px 2px 2px;
@@ -37,7 +44,7 @@ html, body{
   margin-top:2em;
 }
 
-#cards{
+.cards{
   margin-top:1em;
 
 }

@@ -1,6 +1,14 @@
 
 document.getElementById("myForm").addEventListener('submit',saveBookmark);
+document.getElementById("searchlink").addEventListener('click',searchBookmark);
 
+function searchBookmark(e){
+  var bookmarkName = document.getElementById('bookmarkSearchInput').value;
+  var updatedBookmarkName = ''+bookmarkName+'';
+  document.getElementById(updatedBookmarkName).scrollIntoView();
+  document.getElementById("searchBookmarkForm").reset();
+  e.preventDefault();
+}
 function saveBookmark(e){
   var websiteName = document.getElementById("website-name").value;
   var websiteURL = document.getElementById("website-url").value;
@@ -44,7 +52,7 @@ function fetchBookmarks(){
   for(var i=0;i<bookmarksArray.length;i++){
    var name = bookmarksArray[i].name;
    var url = bookmarksArray[i].url;
-   addedBookmarks.innerHTML+= '<div id ="cards" class="card card-body bg-light">'+
+   addedBookmarks.innerHTML+= '<div id ="'+name+'" class="cards card card-body bg-light">'+
                               '<h3>'+name+
                               '<a class="spacing btn btn-primary" target="_blank" href="'+url+'">Visit</a>'+
                               '<a onclick ="deleteBookmark(\''+url+'\')" class="spacing btn btn-danger" href="#">Remove</a>'+
